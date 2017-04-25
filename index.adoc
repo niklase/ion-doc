@@ -613,7 +613,8 @@ A non-normative example
       "name": "friends", "type": "object", "form": {
         "type": "set", "itemtype": "object",
         "value": [
-          { "name": "firstName" }, { "name": "email" }
+          { "name": "firstName" },
+          { "name": "email" }
         ]
       }
     }
