@@ -602,6 +602,37 @@ MUST NOT perform type validation on any value in the array before submitting the
 
 Use of this member is OPTIONAL.
 
+A non-normative example
+
+[source,json]
+----
+{
+  "href": "https://example.io/persons", "rel": ["create-form"], "method": "POST",
+  "value": [
+    {
+      "name": "friends", "type": "object", "form": {
+        "type": "set", "itemtype": "object",
+        "value": [
+          { "name": "firstName" }, { "name": "email" }
+        ]
+      }
+    }
+  ]
+}
+----
+
+.Example form submission object (corresponding to previous form example)
+
+[source,json]
+----
+{
+  "friends": [
+    {"firstName": "Peter", "email": "peter@example.com"},
+    {"firstName": "Laura", "email": "laura@example.com"}
+  ]
+}
+----
+
 ==== `label`
 
 The `label` member is a human-readable string that may be used to enhance usability.
