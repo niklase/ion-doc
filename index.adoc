@@ -837,7 +837,7 @@ Use of this member is OPTIONAL.
 
 ==== `required`
 
-The `required` member indicates whether or not the field value may equal `null` before is submitted to the form's linked resource location.
+The `required` member indicates whether or not the field value may equal `null` before it is submitted to the form's linked resource location.
 
 The `required` member is a boolean; it must equal either `true` or `false`. `null` or any other JSON value MUST NOT be specified.
 
